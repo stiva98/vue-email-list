@@ -26,11 +26,14 @@
 
     <main>
         <div id="app">
-            <ul>
+            <ul v-if="email.length==10">
                 <li v-for="mail in email">
                     {{ mail }}
                 </li>
             </ul>
+            <div v-else>
+                Aspetta che carica...
+            </div>
         </div>
     </main>
     
